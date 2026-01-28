@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Woos</title>
+    <title>Sign Up - Woos Tutoring</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>About Woos</h1>
+    <h1>Sign Up for Tutoring</h1>
 </header>
 
 <nav>
@@ -19,17 +19,37 @@
 </nav>
 
 <section class="content">
-    <h2>Who We Are</h2>
-    <p>
-        Woos is a tutoring platform dedicated to helping students
-        succeed in Maths, Physics, and ICT through clear explanations,
-        practical examples. support me 
-    </p>
+    <form
+        class="signup-form"
+        action="https://formsubmit.co/opyellowed@gmail.com"
+        method="POST"
+    >
 
-    <p>
-        Our mission is to make learning simple, engaging, and effective
-        for students sha
-    </p>
+        <!-- FormSubmit Settings -->
+        <input type="hidden" name="_subject" value="New Tutoring Signup - Woos">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <label>Full Name</label>
+        <input type="text" name="Full Name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="Student Email" required>
+
+        <label>Subject</label>
+        <select name="Subject" required>
+            <option value="">Select a subject</option>
+            <option>Mathematics</option>
+            <option>Physics</option>
+            <option>ICT</option>
+        </select>
+
+        <label>Additional Information</label>
+        <textarea name="Message" placeholder="Class level or learning needs"></textarea>
+
+        <button type="submit">Sign Up</button>
+    </form>
 </section>
 
 <footer>
@@ -37,4 +57,4 @@
 </footer>
 
 </body>
-</html>
+            </html>
