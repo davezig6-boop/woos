@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Woos Tutoring</title>
+    <title>Sign Up - Woos Tutoring</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>About Woos Tutoring</h1>
+    <h1>Sign Up for Tutoring</h1>
 </header>
 
 <nav>
@@ -19,10 +19,35 @@
 </nav>
 
 <section class="content">
-    <p>
-        Woos Tutoring is focused on helping students understand difficult
-        concepts through clear explanations and one-on-one guidance.
-    </p>
+    <form
+        class="signup-form"
+        action="https://formsubmit.co/YOUREMAIL@gmail.com"
+        method="POST"
+    >
+        <input type="hidden" name="_subject" value="New Tutoring Signup - Woos">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <label>Full Name</label>
+        <input type="text" name="Full Name" required>
+
+        <label>Email</label>
+        <input type="email" name="Email" required>
+
+        <label>Subject</label>
+        <select name="Subject" required>
+            <option value="">Select a subject</option>
+            <option>Mathematics</option>
+            <option>Physics</option>
+            <option>ICT</option>
+        </select>
+
+        <label>Message</label>
+        <textarea name="Message"></textarea>
+
+        <button type="submit">Sign Up</button>
+    </form>
 </section>
 
 <footer>
